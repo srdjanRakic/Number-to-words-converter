@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Number Pronunciator</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<div class="container">
+    <div class="row vertically-centered-container">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <input class="form-control" type="text" id="numberToPronounce" value="0"/>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <button class="btn btn-primary btn-block" onclick="pronounceNumber()">Convert</button>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="EN-addon">EN</span>
+                        <input type="text" class="form-control text-center" id="numberInWordsEN" aria-describedby="EN-addon" disabled/>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="MK-addon">MK</span>
+                        <input type="text" class="form-control text-center" id="numberInWordsMK" aria-describedby="MK-addon" disabled/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
